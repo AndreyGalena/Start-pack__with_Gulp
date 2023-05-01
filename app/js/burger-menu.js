@@ -9,8 +9,8 @@ let body = document.querySelector('body');
 // добовляет класс active.
 // используется в событиях(file.js)
 function addActiveMenu() {
-    // Добовляем класс к .menu-btn и к .header__menu
+    // Добовляем класс.
     menuBtn.classList.toggle('active');
-    menu.classList.toggle('active');
+    menuBlock.classList.toggle('active');
     body.classList.toggle('active');
 };

@@ -22,11 +22,11 @@ let removeClasses = () => {
 // Вешаем общее событие на всю страничку.
 document.body.addEventListener("click", function(e) {
     // Возвращает элемент по которому кликнули.
-    // const comment = e.target; // это исходный элемент, на котором 
-                                 // произошло событие, в процессе всплытия он неизменен.
+    const comment = e.target; // это исходный элемент, на котором 
+                              // произошло событие, в процессе всплытия он неизменен.
 
     // Возвращает родительский элемент.
-    const comment = e.target.parentElement;
+    const commentParent = e.target.parentElement;
 
     // console.log(e.target.parentElement); // возвращает элемент перед кликнутым
     // console.log(e.target.previousElementSibling); // возвращает элемент перед кликнутым
