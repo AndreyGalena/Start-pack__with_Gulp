@@ -1,4 +1,4 @@
-﻿// Gulp все файлы JS собирает в file.min.js
+// Gulp все файлы JS собирает в file.min.js
 
 // Создаёт список элементов
 let cards = document.querySelectorAll('.comment');
