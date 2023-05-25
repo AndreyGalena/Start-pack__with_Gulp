@@ -34,7 +34,9 @@ document.body.addEventListener("click", function(e) {
 
     /* Проверка на существующий классa. */
     // Бургер меню.
-    if (commentParent.classList.contains("menu-btn")) {
+    if (commentParent.classList.contains("menu-btn")
+        ||
+        commentParent.classList.contains("header__block")) {
         addActiveMenu();
     }
     // Последующие действия.
