@@ -28,7 +28,7 @@ document.body.addEventListener("click", function(e) {
     // Возвращает родительский элемент.
     const commentParent = e.target.parentElement;
 
-    // console.log(e.target.parentElement); // возвращает элемент перед кликнутым
+    // console.log(e.target.parentElement);           // возвращает элемент перед кликнутым
     // console.log(e.target.previousElementSibling); // возвращает элемент перед кликнутым
     // console.log(e.target.parentElement.parentElement.nextElementSibling); // .nextElementSibling - следующий элемент в DOM.
 
