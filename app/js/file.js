@@ -22,11 +22,11 @@ let removeClasses = () => {
 // Вешаем общее событие на всю страничку.
 document.body.addEventListener("click", function(e) {
     // Возвращает элемент по которому кликнули.
-    const comment = e.target; // это исходный элемент, на котором 
+    const directСlick = e.target; // это исходный элемент, на котором 
                               // произошло событие, в процессе всплытия он неизменен.
 
     // Возвращает родительский элемент.
-    const commentParent = e.target.parentElement;
+    const parentСlick = e.target.parentElement;
 
     // console.log(e.target.parentElement);           // возвращает элемент перед кликнутым
     // console.log(e.target.previousElementSibling); // возвращает элемент перед кликнутым
@@ -34,15 +34,15 @@ document.body.addEventListener("click", function(e) {
 
     /* Проверка на существующий классa. */
     // Бургер меню.
-    if (commentParent.classList.contains("menu-btn")
+    if (directСlick.classList.contains("menu-btn")
         ||
-        commentParent.classList.contains("header__block")) {
+        directСlick.classList.contains("span")) {
         addActiveMenu();
     }
     // Последующие действия.
-    if (comment.classList.contains("left")) {
+    if (directСlick.classList.contains("left")) {
         nameClass();
-    } else if (comment.classList.contains("right")) {
+    } else if (directСlick.classList.contains("right")) {
         removeClasses();
         addClass();
     }
